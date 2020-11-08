@@ -6,7 +6,7 @@ A command line application that will prompt user for information about the team 
 A video demonstration of the app can be seen here: [Employee Summary](https://drive.google.com/file/d/1WKqlOQsrSB7bC0m8CQyjqpgfsqTfwb2C/view)
 
 
-![screenshot](https://github.com/zeroshii/Employee-Summary/blob/develop/public/assets/screenshot.png)
+![screenshot](https://github.com/zeroshii/Employee-Summary/blob/main/Assets/screenshot.jpg)
 
 ## Table of Contents
 - [Technologies](#technologies)
