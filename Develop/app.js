@@ -51,11 +51,11 @@ async function main(){
         if (teamMember.role === 'Engineer'){
             const employee = await inquirer.prompt([
                 {   
-                    name: 'name:',
+                    name: 'name',
                     message: "The engineer's name:",
                 },
                 {   
-                    name: 'email:',
+                    name: 'email',
                     message: "The engineer's email:",
                 },
                 {
@@ -63,18 +63,19 @@ async function main(){
                     message: 'Github:',
                 }
             ]);
-            const engineer = new Engineer (employee.name, userId++, employee.email, employee.github);
-            userList.push(engineer);
+            const engineer = new Engineer(employee.name, userId++, employee.email, employee.github);
             console.log(engineer);
+            userList.push(engineer);
+            
         }
         else {
             const employee = await inquirer.prompt([
                 {   
-                    name: 'name:',
+                    name: 'name',
                     message: "The intern's name:"
                 },
                 {   
-                    name: 'email:',
+                    name: 'email',
                     message: "The intern's email:"
                 },
                 {
@@ -83,8 +84,8 @@ async function main(){
                 }
             ])
             const intern = new Intern (employee.name, userId++, employee.email, employee.school)
-            userList.push(intern);
             console.log(intern);
+            userList.push(intern);
         } 
     }
 
